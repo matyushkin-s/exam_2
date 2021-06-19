@@ -1,0 +1,50 @@
+#projects {
+  min-height: 1601px;
+  color: rgba(44, 64, 88, 1);
+  padding: 100px 215px;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  &:not(:last-child) {
+    margin-bottom: 140px;
+  }
+}
+
+.project_text {
+  width: 500px;
+  & > .heading2 {
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  & > .button {
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
+  & > .address {
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 16px;
+      width: 14px;
+      margin-right: 8px;
+      background: url(../img/Marker_black.png) center center no-repeat;
+    }
+  }
+}
+
+// // тени за картинками не сделал
+// .project_img1 {
+//   &::before {
+//     content: "";
+//     display: inline-block;
+//     width: 585px;
+//     height: 470px;
+//     margin-right: 8px;
+//     background: rgba(85, 183, 255, 1);
+//   }
+// }
